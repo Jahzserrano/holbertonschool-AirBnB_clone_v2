@@ -40,8 +40,7 @@ def states(id=None):
 
 @app.teardown_appcontext
 def teardown_appcontext(exception):
-    """ Function that removes the current SQL Alchemy Session after each
-    request. """
+    """Function that removes the current SQL Alchemy Session after each request."""
     storage.close()
 
 
